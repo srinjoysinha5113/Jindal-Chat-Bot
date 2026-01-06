@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jindal Power Safety Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with Logo and Navigation -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-section">
+        <a href="https://www.jindalpower.com">
+          <img src="jindal_power_limited_logo.png" alt="Jindal Power Logo" class="logo">
+        </a>
+        <div class="header-text">
+          <h1>Jindal Bot</h1>
+          <p class="header-subtitle">Jindal Power Limited</p>
+        </div>
+      </div>
+      <nav class="nav-buttons">
+        <button class="nav-btn" id="chat-tab">Chat</button>
+        <button class="nav-btn" id="faq-tab">FAQ</button>
+        <button class="nav-btn" id="health-btn">Status</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Chat Interface -->
+  <div id="chat-interface" class="main-container active">
+    <div class="chat-wrapper glass-effect">
+      <!-- <div class="chat-header">
+        <h2>Safety Assistant</h2>
+        <p class="chat-subtitle">Ask about safety procedures, PPE, emergency protocols, and more</p>
+      </div> -->
+
+      <div class="chat-container" id="chat-window">
+        <div class="message bot-message">
+          <div class="message-avatar">🤖</div>
+          <div class="message-content">
+            Hello! I'm your Safety Assistant powered by Jindal Power's safety guidelines. I can help you with:
+            <ul>
+              <li>Safety procedures and protocols</li>
+              <li>Personal Protective Equipment (PPE) requirements</li>
+              <li>Emergency procedures</li>
+              <li>Hazard identification</li>
+              <li>Risk mitigation strategies</li>
+            </ul>
+            How can I help you today?
+          </div>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+
+      <form id="chat-form" class="input-container">
+        <input
+          type="text"
+          id="user-input"
+          class="message-input"
+          placeholder="Ask a safety question... (e.g., 'What PPE is required in the boiler area?')"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="send-btn">
+          <span>Send</span>
+          <span class="send-icon">➤</span>
+        </button>
+      </form>
+
+      <div class="quick-suggestions">
+        <p class="suggestions-label">Quick Questions:</p>
+        <div class="suggestions-grid">
+          <button class="suggestion-btn" data-question="What are the main safety hazards in a thermal power plant?">
+            🔴 Main Hazards
+          </button>
+          <button class="suggestion-btn" data-question="What PPE is required in operational areas?">
+            🦺 PPE Requirements
+          </button>
+          <button class="suggestion-btn" data-question="What is the emergency evacuation procedure?">
+            🚨 Emergency Protocol
+          </button>
+          <button class="suggestion-btn" data-question="How do I report an unsafe condition?">
+            📋 Report Hazard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Interface -->
+  <div id="faq-interface" class="main-container">
+    <div class="faq-wrapper glass-effect">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p class="faq-subtitle">Browse safety guidelines organized by category</p>
+      </div>
+
+      <div id="faq-container" class="faq-grid">
+        <!-- FAQ items will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Health Status Interface -->
+  <div id="health-interface" class="main-container">
+    <div class="health-wrapper glass-effect">
+      <div class="health-header">
+        <h2>System Status</h2>
+        <p class="health-subtitle">Backend connectivity and service health</p>
+      </div>
+
+      <div id="health-status" class="health-container">
+        <div class="status-card loading">
+          <div class="status-icon">⏳</div>
+          <h3>Checking Backend...</h3>
+          <p class="status-text">Connecting to safety server</p>
+        </div>
+      </div>
+
+      <div class="health-info">
+        <h3>Service Details</h3>
+        <div id="health-details" class="details-grid">
+          <!-- Health details will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div id="loading-indicator" class="loading-spinner hidden">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

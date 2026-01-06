@@ -1,0 +1,14 @@
+def build_rag_prompt(query: str, retrieved_chunks: List[str]) -> str:
+    context = "\n\n".join(retrieved_chunks)
+    
+    prompt = f"""
+You are a safety assistant for a power plant. Answer the question using the context below.
+
+CONTEXT:
+{context}
+
+QUESTION: {query}
+
+Use the context to give a helpful answer. If the context doesn't fully cover the question, give the best answer you can based on what you know and note what's missing.
+"""
+    return prompt.strip()

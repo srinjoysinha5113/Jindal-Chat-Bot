@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+ollama
+pypdf
+faiss-cpu
+python-multipart
+pydantic

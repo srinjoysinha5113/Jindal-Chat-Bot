@@ -1,0 +1,209 @@
+{
+  "categories": [
+    {
+      "name": "General Safety",
+      "faqs": [
+        {
+          "question": "What is the purpose of this Safety Bot?",
+          "answer": "This bot provides expert safety guidance based on Jindal Power's safety manuals. It answers common safety questions about procedures, hazards, PPE, and emergency protocols. It does not replace official SOPs or safety officers.",
+          "severity": "info"
+        },
+        {
+          "question": "Can this bot be used during emergencies?",
+          "answer": "No. In emergency situations, always follow official emergency procedures and contact the control room or safety officer immediately. This bot is for training and reference only.",
+          "severity": "warning"
+        },
+        {
+          "question": "Is the information provided officially approved?",
+          "answer": "The bot is designed using official Jindal Power safety guidelines and plant documentation. However, official SOPs should always take priority.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "name": "Personal Protective Equipment (PPE)",
+      "faqs": [
+        {
+          "question": "Is PPE mandatory inside the plant?",
+          "answer": "Yes, absolutely. Wearing appropriate PPE is mandatory in all designated operational areas. Non-compliance can result in disciplinary action.",
+          "severity": "high"
+        },
+        {
+          "question": "What PPE is generally required in operational zones?",
+          "answer": "<strong>Standard PPE includes:</strong><ul><li>Safety helmet with chin strap</li><li>Safety shoes (steel-toed)</li><li>High-visibility vest</li><li>Protective gloves (leather/rubber as applicable)</li><li>Safety glasses or face shield</li><li>Ear protection (in high-noise areas)</li></ul>Additional PPE may be needed based on specific area hazards.",
+          "severity": "info"
+        },
+        {
+          "question": "What should I do if required PPE is not available?",
+          "answer": "Do not enter the area. Immediately inform your supervisor or the safety officer. Request replacement or alternative PPE before proceeding.",
+          "severity": "high"
+        },
+        {
+          "question": "How often should PPE be inspected?",
+          "answer": "Inspect PPE before each use for damage or defects. Replace damaged PPE immediately. Hard hats should be replaced every 5 years or after any significant impact.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "name": "Boiler & High-Temperature Areas",
+      "faqs": [
+        {
+          "question": "Is it safe to enter boiler or high-temperature areas without permission?",
+          "answer": "No. Entry into boiler and high-temperature zones requires proper authorization, confined space permits, and appropriate PPE including heat-resistant clothing.",
+          "severity": "high"
+        },
+        {
+          "question": "What precautions should be taken near hot surfaces or steam lines?",
+          "answer": "<strong>Safety precautions:</strong><ul><li>Maintain minimum 2-meter safe distance</li><li>Wear heat-resistant PPE (gloves, apron, face shield)</li><li>Never touch equipment without authorization</li><li>Watch for steam leaks</li><li>Always check temperature before touching</li></ul>",
+          "severity": "info"
+        },
+        {
+          "question": "What temperature is considered hazardous?",
+          "answer": "Any surface above 60°C (140°F) is considered hazardous and can cause burns. Surfaces above 120°C require additional protective measures.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "name": "Electrical Safety",
+      "faqs": [
+        {
+          "question": "Who is allowed to work on electrical panels or equipment?",
+          "answer": "Only trained and certified electrical personnel with valid electrical licenses are permitted to work on electrical systems. All work must follow lockout/tagout procedures.",
+          "severity": "high"
+        },
+        {
+          "question": "What should I do if I notice exposed electrical wiring?",
+          "answer": "Keep a safe distance and report it immediately to maintenance or safety personnel. Do not touch or try to repair it yourself. Cordon off the area if possible.",
+          "severity": "high"
+        },
+        {
+          "question": "What is the safe voltage threshold for touching electrical equipment?",
+          "answer": "Never touch any electrical equipment carrying more than 24V AC/DC without proper training and equipment. High-voltage equipment (above 1000V) is extremely dangerous.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "name": "Fire Safety",
+      "faqs": [
+        {
+          "question": "What should I do if I see fire or smoke?",
+          "answer": "<strong>Immediate actions:</strong><ul><li>Activate the nearest fire alarm</li><li>Move to a safe area away from the fire</li><li>Inform the control room immediately</li><li>Follow evacuation routes</li><li>Use fire extinguishers ONLY if trained and safe</li></ul>",
+          "severity": "critical"
+        },
+        {
+          "question": "Can fire extinguishers be used by anyone?",
+          "answer": "Only trained personnel should use fire extinguishers, and only if it is safe to do so. Never use a fire extinguisher on an electrical fire unless it's rated for Class C.",
+          "severity": "warning"
+        },
+        {
+          "question": "What are the different fire extinguisher classes?",
+          "answer": "<strong>Fire Extinguisher Classes:</strong><ul><li><strong>Class A:</strong> Ordinary combustibles (wood, paper, cloth)</li><li><strong>Class B:</strong> Flammable liquids (oil, paint, gas)</li><li><strong>Class C:</strong> Electrical equipment</li><li><strong>Class D:</strong> Combustible metals</li></ul>Always use the correct type for the fire.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "name": "Gas & Chemical Safety",
+      "faqs": [
+        {
+          "question": "What should I do if I smell gas or chemicals?",
+          "answer": "<strong>Immediate actions:</strong><ul><li>Leave the area immediately</li><li>Avoid all ignition sources</li><li>Inform the control room or safety officer</li><li>Move to fresh air</li><li>Do not re-enter until cleared by safety personnel</li></ul>",
+          "severity": "critical"
+        },
+        {
+          "question": "Is it safe to investigate a suspected gas leak alone?",
+          "answer": "No. Never attempt to investigate gas leaks without authorization and proper equipment. Always report to safety personnel and let trained specialists handle it.",
+          "severity": "critical"
+        },
+        {
+          "question": "What should I do if exposed to chemical splash?",
+          "answer": "Immediately flush the affected area with water for at least 15 minutes. Remove contaminated clothing. Seek medical attention immediately. Inform medical staff about the chemical involved.",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "name": "Restricted Areas & Access Control",
+      "faqs": [
+        {
+          "question": "What are restricted areas in the plant?",
+          "answer": "<strong>Restricted areas include:</strong><ul><li>Boiler and furnace rooms</li><li>Turbine areas (high-speed rotating machinery)</li><li>High-voltage electrical rooms</li><li>Chemical storage areas</li><li>Areas with extreme temperatures or pressures</li><li>Confined spaces</li></ul>Entry requires authorization and proper training.",
+          "severity": "info"
+        },
+        {
+          "question": "Can visitors enter operational areas?",
+          "answer": "Visitors must be escorted by authorized personnel and follow all safety and PPE requirements. Visitors are not allowed in restricted areas unless specially trained and authorized.",
+          "severity": "warning"
+        },
+        {
+          "question": "What access levels are required for different areas?",
+          "answer": "Access levels depend on job role and training. General staff have Level 1 access (non-hazardous areas). Operators have Level 2 (operational areas). Only specialists have Level 3 (restricted areas). Verify your access level with your supervisor.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "name": "Emergency Response",
+      "faqs": [
+        {
+          "question": "What should I do during an emergency evacuation?",
+          "answer": "<strong>Evacuation procedure:</strong><ul><li>Follow marked evacuation routes</li><li>Do not run or panic</li><li>Help others if possible</li><li>Assemble at the designated muster point</li><li>Report to your team leader</li><li>Never go back inside unless authorized</li></ul>",
+          "severity": "critical"
+        },
+        {
+          "question": "Where can I find emergency contact numbers?",
+          "answer": "Emergency contact numbers are displayed on safety boards throughout the plant and provided during induction training. Key numbers:\n<ul><li>Safety Control Room: [Posted on bulletin boards]</li><li>Medical Emergency: [Posted on bulletin boards]</li><li>Fire Department: 101</li></ul>Save these numbers in your phone.",
+          "severity": "info"
+        },
+        {
+          "question": "What is the muster point for my area?",
+          "answer": "Muster points are designated safe areas outside the plant where all personnel assemble during emergencies. Your muster point is posted on safety boards in your work area. Ask your supervisor if unsure.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "name": "Reporting & Safety Culture",
+      "faqs": [
+        {
+          "question": "How do I report a safety hazard or near miss?",
+          "answer": "<strong>Reporting steps:</strong><ul><li>Immediately inform your supervisor or safety officer</li><li>Fill out a safety incident report form</li><li>Provide details: what, when, where, who was involved</li><li>Mention potential consequences</li><li>Submit to the safety department</li></ul>All reports are reviewed and acted upon promptly.",
+          "severity": "info"
+        },
+        {
+          "question": "Why is reporting near misses important?",
+          "answer": "Reporting near misses (incidents that almost caused injury) helps identify hazards before someone gets hurt. This prevents future accidents and improves overall plant safety culture.",
+          "severity": "info"
+        },
+        {
+          "question": "Is it confidential if I report a safety issue?",
+          "answer": "Yes, safety incident reports are handled confidentially and professionally. The focus is on fixing the hazard, not blaming individuals. Your safety concern will be taken seriously.",
+          "severity": "info"
+        }
+      ]
+    },
+    {
+      "name": "Personal Health & Safety",
+      "faqs": [
+        {
+          "question": "What should I do if I feel unwell at work?",
+          "answer": "Inform your supervisor immediately and report to the medical center or first aid room. Do not continue working if you're unwell, as it could lead to accidents. Your health and safety are priorities.",
+          "severity": "warning"
+        },
+        {
+          "question": "Is there medical help available during work hours?",
+          "answer": "Yes, medical staff are available during all work hours. The medical center/first aid room is located at [posted locations]. In case of emergency, call the control room immediately.",
+          "severity": "info"
+        },
+        {
+          "question": "What should I do if I get injured at work?",
+          "answer": "<strong>Injury procedure:</strong><ul><li>Stop work immediately</li><li>Inform your supervisor</li><li>Report to medical center or first aid room</li><li>Get medical attention</li><li>File an injury report</li><li>Follow medical advice</li></ul>All work injuries must be reported, even minor ones.",
+          "severity": "high"
+        }
+      ]
+    }
+  ]
+}
